@@ -1,0 +1,40 @@
+---
+x86_64-18.04:
+  node_exporter:
+  - version: 1.1.1
+    token: xxxxxxxx
+  - version: default
+    token: yyyyyy
+  cadvisor:
+  - version: 1.1.1
+    token: xxxxxxxx
+  - version: default
+    token: yyyyyy
+  exporter_exporter:
+  - version: 1.1.1
+    token: xxxxxxxx
+  - version: default
+    token: yyyyyy
+  default:
+    mount: ext4
+    cadvisor: 1.1.1
+    node_exporter: 2.2.2
+    docker: latest
+    kagent: 'YES'
+x86_64-20.04:
+  node_exporter:
+  - version: 1.1.1
+    token: xxxxxxxx
+  - version: default
+    token: yyyyyy
+  cadvisor:
+  - version: 1.1.1
+    token: xxxxxxxx
+  - version: default
+    token: yyyyyy
+  default:
+    mount: ext4
+    cadvisor: 1.1.1
+    node_exporter: 2.2.2
+    docker: 20.0.0
+    kagent: 'YES'
