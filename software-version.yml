@@ -45,3 +45,22 @@ x86_64-20.04:
     node_exporter: 2.2.2
     docker: 20.0.0
     kagent: NO
+custom_config:
+  install_by_token:
+  - node_exporter
+  - cadvisor
+  - exporter_exporter
+  - zabbix
+  proxy_exporter:
+  - cadvisor
+  - node_exporter
+  - zabbix
+  exec_older:
+  - mount
+  - docker
+  - node_exporter
+  - cadvisor
+  - kagent
+  - exporter_exporter
+  - zabbix
+
