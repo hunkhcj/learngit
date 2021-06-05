@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Install cadvisor!!!!!"
+echo "Install cadvisor!!!!! ---- $1"
