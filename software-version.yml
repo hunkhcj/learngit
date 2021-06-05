@@ -55,7 +55,7 @@ custom_config:
   - cadvisor
   - node_exporter
   - zabbix
-  exec_order:
+  software_order:
   - mount
   - docker
   - node_exporter
