@@ -26,8 +26,8 @@ x86_64-18.04:
     node_exporter: 2.2.2
     docker: latest
     kagent: latest
-    expoter_expoter: 'NO'
-    zabbix: 'NO'
+    expoter_expoter: false
+    zabbix: false
 x86_64-20.04:
   node_exporter:
   - version: 1.1.1
@@ -44,7 +44,7 @@ x86_64-20.04:
     cadvisor: 1.1.1
     node_exporter: 2.2.2
     docker: 20.0.0
-    kagent: NO
+    kagent: false
 custom_config:
   software_by_token:
   - node_exporter
