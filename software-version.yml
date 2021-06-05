@@ -46,7 +46,7 @@ x86_64-20.04:
     docker: 20.0.0
     kagent: NO
 custom_config:
-  install_by_token:
+  software_by_token:
   - node_exporter
   - cadvisor
   - exporter_exporter
