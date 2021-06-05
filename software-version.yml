@@ -44,4 +44,4 @@ x86_64-20.04:
     cadvisor: 1.1.1
     node_exporter: 2.2.2
     docker: 20.0.0
-    kagent: 'YES'
+    kagent: NO
