@@ -4,7 +4,7 @@
 # cp -a /tmp/node_exporter-0.18.1.linux-amd64/node_exporter /usr/local/bin/node_exporter
 
 token=$1;
-file-ladder down -C /usr/local/bin/ $token;
+file-ladder down -C /usr/local/bin/ $token -y;
 
 useradd -rs /bin/false node_exporter
 ## touch config file

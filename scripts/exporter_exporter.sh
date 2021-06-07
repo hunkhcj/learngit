@@ -1,14 +1,16 @@
 #!/bin/bash
 
-param="$1"
+token=$1
+param="$2"
 system_arch=`dpkg --print-architecture`
 if [ "$system_arch"  != "amd64" ]; then
   echo "Not is amd64 architecture ,don't install exporter_exporter"
   exit 1
 fi
-wget -P /tmp  https://github.com/QubitProducts/exporter_exporter/releases/download/v0.4.2/expexp_0.4.2-3_amd64.deb
-dpkg -i /tmp/expexp_0.4.2-3_amd64.deb
+# wget -P /tmp  https://github.com/QubitProducts/exporter_exporter/releases/download/v0.4.2/expexp_0.4.2-3_amd64.deb
+# dpkg -i /tmp/expexp_0.4.2-3_amd64.deb
 
+file-ladder down -y ${token} -C /usr/local/bin/
 
 config=/etc/exporter_exporter.yaml
 

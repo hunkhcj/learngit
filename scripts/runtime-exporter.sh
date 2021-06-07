@@ -8,10 +8,10 @@ fi
 if [[ `cat /etc/issue|grep '18.04'|wc -l` == 1 ]];
 then
     cd /usr/local/bin
-    file-ladder down Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE=
+    file-ladder down Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE= -y
 else
      cd /usr/local/bin
-    file-ladder down Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkzNzQ3ODA5ODQ=
+    file-ladder down Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkzNzQ3ODA5ODQ= -y
 fi
 cat << EOF > /lib/systemd/system/runtime-exporter.service
 [Unit]
