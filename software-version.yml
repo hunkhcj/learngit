@@ -1,41 +1,42 @@
 ---
 # 各个OS类型对应需要使用file-ladder进行安装软件的配置.
 x86_64-18.04:
-  tokens: 
+  tokens:
     zabbix:
-    - version: 3.4.4
-      token: xxxxxxxx
+    - version: v3.4.4
+      token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     - version: default
-      token: yyyyyy
+      token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     node_exporter:
-    - version: v0.34.0
-      token: node_exporternode_exporternode_exporternode_exporternode_exporter
+    - version: v0.18.1
+      token: Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ==
     - version: default
-      token: node_exporternode_exporternode_exporternode_exporternode_exporter
+      token: Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ==
     runtime-exporter:
-    - version: 1.1.1
+    - version: v1.1.0
       token: Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE=
     - version: default
       token: Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE=
     cadvisor:
-    - version: 0.34.0
+    - version: v0.34.0
       token: MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw==
     - version: default
       token: MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw==
     exporter_exporter:
-    - version: 0.4.2-3
-      token: xxxxxxxx
+    - version: v0.4.2
+      token: Z2xvYmFsLzIwMjEvNi83L2V4cG9ydGVyX2V4cG9ydGVyJiYmJjE2MjMwNTI2MDE3MDIyNTI=
     - version: default
-      token: yyyyyy
+      token: Z2xvYmFsLzIwMjEvNi83L2V4cG9ydGVyX2V4cG9ydGVyJiYmJjE2MjMwNTI2MDE3MDIyNTI=
   # 默认软件版本
   default:
     mount: ext4
-    cadvisor: 0.18.1
-    node_exporter: v0.34.0  
-    docker: 18.06.1-ce
-    exporter_exporter: 0.4.2-3
+    cadvisor: v0.18.1
+    node_exporter: v0.34.0
+    exporter_exporter: v0.4.2
+    runtime-exporter: v1.1.0
+    docker: latest
+    docker-compose: 1.25.4
     zabbix: false
-    docker-compose: 1.1.4
     
     
 x86_64-20.04:

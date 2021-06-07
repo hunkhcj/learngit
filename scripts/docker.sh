@@ -2,6 +2,12 @@
 ##
 ##  Docker install.
 ##
+version=$1
+if $version == 'latest'; then
+    dockerversion="docker-ce";
+else
+    dockerversion="docker-ce=$version"
+fi
 # 为防止/data及磁盘挂载未挂载完成，先 sleep 30;
 sleep 5
 # prepare docker apt source
@@ -11,10 +17,10 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -;
 apt-key fingerprint 0EBFCD88;
 apt-get update;
 apt-get install -y apt-transport-https ca-certificates curl software-properties-common; 
-if [[ `lsb_release -a|grep Release|awk '{print $NF}'` == "20.04" ]]; then
-    apt-get install -y docker-ce=5:20.10.6~3-0~ubuntu-focal;
+if [ `lsb_release -a|grep Release|awk '{print $NF}'` == "20.04" ]; then
+    apt-get install -y $dockerversion;
 else
-    apt-get install -y docker-ce=18.06.1~ce~3-0~ubuntu;
+    apt-get install -y $dockerversion;
 fi
 docker ps
 gpasswd -a developer docker
@@ -29,7 +35,7 @@ ufw disable
 
 ## 修改docker目录
 [ -d /data/docker ] || mkdir -p /data/docker/
-if [[ `docker -v| awk '{print $3}'| awk -F',' '{print $1}'` == '20.10.6' ]];then
+if [ `docker -v| awk '{print $3}'| awk -F',' '{print $1}'` == '20.10.6' ];then
     systemctl stop docker.socket
     systemctl stop docker
     sleep 1;
