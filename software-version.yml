@@ -18,10 +18,10 @@ x86_64-18.04:
     - version: default
       token: Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE=
     cadvisor:
-    - version: 0.18.1
-      token: cadvisorcadvisorcadvisorcadvisorcadvisorcadvisor
+    - version: 0.34.0
+      token: MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw==
     - version: default
-      token: cadvisorcadvisorcadvisorcadvisorcadvisorcadvisor
+      token: MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw==
     exporter_exporter:
     - version: 0.4.2-3
       token: xxxxxxxx
