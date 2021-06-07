@@ -28,6 +28,9 @@ x86_64-18.04:
     kagent: latest
     exporter_exporter: false
     zabbix: false
+    docker-compose: 1.1.4
+    
+    
 x86_64-20.04:
   node_exporter:
   - version: 1.1.1
@@ -63,4 +66,5 @@ custom_config:
   - kagent
   - exporter_exporter
   - zabbix
+  - docker-compose
 
