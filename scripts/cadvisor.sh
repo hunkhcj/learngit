@@ -8,7 +8,7 @@ token=$1
 # 下载文件
 [ -d /opt/admin/ ] || mkdir -p /opt/admin/
 # wget https://github.com/google/cadvisor/releases/download/v0.34.0/cadvisor -O /usr/local/bin/cadvisor
-file-ladder down -C /usr/local/bin/ ${token}
+file-ladder down -C /usr/local/bin/ ${token} -y
 
 # 准备启动文件
 cat << EOF > /etc/default/cadvisor
