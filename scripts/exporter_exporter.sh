@@ -30,6 +30,7 @@ if [ `echo $param|grep -e cadvisor` ];then
       http:
          verify: false
          port: 12345
+         
     runtime-exporter:
       method: http
       http:
