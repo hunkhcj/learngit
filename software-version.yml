@@ -48,6 +48,8 @@ x86_64-20.04:
     node_exporter: 2.2.2
     docker: 20.0.0
     kagent: false
+    
+    
 custom_config:
   software_by_token:
   - node_exporter
@@ -68,3 +70,10 @@ custom_config:
   - zabbix
   - docker-compose
 
+
+dependence_config:
+  docker:
+  - docker-compose
+  - runtime-exporter
+  - node_exporter
+  - cadvisor
