@@ -1,26 +1,27 @@
 ---
 # 各个OS类型对应需要使用file-ladder进行安装软件的配置.
 x86_64-18.04:
-  node_exporter:
-  - version: 1.1.1
-    token: xxxxxxxx
-  - version: default
-    token: yyyyyy
-  cadvisor:
-  - version: 1.1.1
-    token: xxxxxxxx
-  - version: default
-    token: yyyyyy
-  exporter_exporter:
-  - version: 1.1.1
-    token: xxxxxxxx
-  - version: default
-    token: yyyyyy
-  zabbix:
-  - version: 1.1.1
-    token: xxxxxxxx
-  - version: default
-    token: yyyyyy
+  token: 
+    node_exporter:
+    - version: 1.1.1
+      token: xxxxxxxx
+    - version: default
+      token: yyyyyy
+    cadvisor:
+    - version: 1.1.1
+      token: xxxxxxxx
+    - version: default
+      token: yyyyyy
+    exporter_exporter:
+    - version: 1.1.1
+      token: xxxxxxxx
+    - version: default
+      token: yyyyyy
+    zabbix:
+    - version: 1.1.1
+      token: xxxxxxxx
+    - version: default
+      token: yyyyyy
   # 默认软件版本
   default:
     mount: ext4
@@ -34,16 +35,17 @@ x86_64-18.04:
     
     
 x86_64-20.04:
-  node_exporter:
-  - version: 1.1.1
-    token: xxxxxxxx
-  - version: default
-    token: yyyyyy
-  cadvisor:
-  - version: 1.1.1
-    token: xxxxxxxx
-  - version: default
-    token: yyyyyy
+  tokens: 
+    node_exporter:
+    - version: 1.1.1
+      token: xxxxxxxx
+    - version: default
+      token: yyyyyy
+    cadvisor:
+    - version: 1.1.1
+      token: xxxxxxxx
+    - version: default
+      token: yyyyyy
   default:
     mount: ext4
     cadvisor: 1.1.1
