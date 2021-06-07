@@ -56,7 +56,6 @@ x86_64-20.04:
     cadvisor: 1.1.1
     node_exporter: 2.2.2
     docker: 20.0.0
-    kagent: false
     
 # 自定义的一些配置
 custom_config:
@@ -71,7 +70,6 @@ custom_config:
   - docker
   - node_exporter
   - cadvisor
-  - kagent
   - exporter_exporter
   - zabbix
   - docker-compose
