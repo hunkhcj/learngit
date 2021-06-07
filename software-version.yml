@@ -53,12 +53,6 @@ x86_64-20.04:
     
 # 自定义的一些配置
 custom_config:
-  # file-ladder安装的软件
-  software_by_token:
-  - node_exporter
-  - cadvisor
-  - exporter_exporter
-  - zabbix
   # 默认情况需要被exporter_exporter代理的软件
   proxy_exporter:
   - cadvisor
