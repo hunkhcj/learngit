@@ -35,7 +35,7 @@ ufw disable
 
 ## 修改docker目录
 [ -d /data/docker ] || mkdir -p /data/docker/
-if [ `docker -v| awk '{print $3}'| awk -F',' '{print $1}'` == '20.10.6' ];then
+if [ `docker -v| awk '{print $3}'| awk -F',' '{print $1}'` =~ ^20' ];then
     systemctl stop docker.socket
     systemctl stop docker
     sleep 1;
