@@ -3,7 +3,7 @@
 ##  Docker install.
 ##
 version=$1
-if $version == 'latest'; then
+if [ $version == 'latest' ]; then
     dockerversion="docker-ce";
 else
     dockerversion="docker-ce=$version"
