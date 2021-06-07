@@ -3,9 +3,8 @@
 # cd /tmp && wget https://github.com/prometheus/node_exporter/releases/download/v0.18.1/node_exporter-0.18.1.linux-amd64.tar.gz && tar -xvzf node_exporter-0.18.1.linux-amd64.tar.gz 
 # cp -a /tmp/node_exporter-0.18.1.linux-amd64/node_exporter /usr/local/bin/node_exporter
 
-echo "Download."
-
 token=$1;
+echo "Download.$token"
 file-ladder down -C /usr/local/bin/ $token -y;
 
 useradd -rs /bin/false node_exporter
