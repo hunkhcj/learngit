@@ -26,7 +26,7 @@ x86_64-18.04:
     node_exporter: 2.2.2
     docker: latest
     kagent: latest
-    expoter_expoter: false
+    exporter_exporter: false
     zabbix: false
 x86_64-20.04:
   node_exporter:
