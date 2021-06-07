@@ -1,4 +1,5 @@
 ---
+# 各个OS类型对应需要使用file-ladder进行安装软件的配置.
 x86_64-18.04:
   node_exporter:
   - version: 1.1.1
@@ -20,6 +21,7 @@ x86_64-18.04:
     token: xxxxxxxx
   - version: default
     token: yyyyyy
+  # 默认软件版本
   default:
     mount: ext4
     cadvisor: 1.1.1
@@ -49,17 +51,20 @@ x86_64-20.04:
     docker: 20.0.0
     kagent: false
     
-    
+# 自定义的一些配置
 custom_config:
+  # file-ladder安装的软件
   software_by_token:
   - node_exporter
   - cadvisor
   - exporter_exporter
   - zabbix
+  # 默认情况需要被exporter_exporter代理的软件
   proxy_exporter:
   - cadvisor
   - node_exporter
   - zabbix
+  # 软件安装执行循序
   software_order:
   - mount
   - docker
