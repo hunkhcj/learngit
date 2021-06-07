@@ -1,7 +1,7 @@
 ---
 # 各个OS类型对应需要使用file-ladder进行安装软件的配置.
 x86_64-18.04:
-  token: 
+  tokens: 
     node_exporter:
     - version: 1.1.1
       token: xxxxxxxx
