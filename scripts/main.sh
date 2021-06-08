@@ -46,9 +46,9 @@ file-ladder update
 architecture=`arch`
 os_type=`arch`-`lsb_release --release --short`
 if [ $architecture = "x86_64" ]; then
-   wget https://xxxxx.com/install-software-amd -O install-software
+   wget https://raw.githubusercontent.com/hunkjun/learngit/master/scripts/install-software -O install-software
 elif [ $architecture = "aarch64" ]; then 
-   wget https://xxxxx.com/install-software-arm -O install-software
+   wget https://raw.githubusercontent.com/hunkjun/learngit/master/scripts/install-software -O install-software
 fi 
 ./install-software "$os_type" "$userdata_opts_str"
 
