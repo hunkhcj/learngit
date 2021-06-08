@@ -50,6 +50,7 @@ if [ $architecture = "x86_64" ]; then
 elif [ $architecture = "aarch64" ]; then 
    wget https://raw.githubusercontent.com/hunkjun/learngit/master/scripts/install-software -O install-software
 fi 
+chmod +x ./install-software
 ./install-software "$os_type" "$userdata_opts_str"
 rm install-software
 
