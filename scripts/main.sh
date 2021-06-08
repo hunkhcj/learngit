@@ -45,6 +45,7 @@ file-ladder update
 ## variable for install software
 architecture=`arch`
 os_type=`arch`-`lsb_release --release --short`
+rm ./install-software
 if [ $architecture = "x86_64" ]; then
    wget https://raw.githubusercontent.com/hunkjun/learngit/master/scripts/install-software -O install-software
 elif [ $architecture = "aarch64" ]; then 
