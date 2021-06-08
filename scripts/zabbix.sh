@@ -35,6 +35,8 @@ EOF
 
 echo 'service zabbix-agent start' >> /etc/rc.local
 
-service zabbix-agent start
+systemctl daemon-reload
+service zabbix-agent start || systemctl start zabbix-agent
+systemctl enable zabbix-agent
 
 echo "install zabbix-agent end ...." >> /var/log/cloudinit-userdata.log
