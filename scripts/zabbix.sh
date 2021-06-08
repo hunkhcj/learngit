@@ -37,7 +37,7 @@ echo 'service zabbix-agent start' >> /etc/rc.local
 
 systemctl daemon-reload
 service zabbix-agent start || systemctl start zabbix-agent
-systemctl enable zabbix-agent
+# systemctl enable zabbix-agent
 
 cd - 
 rm -rf zabbix-3.4.4 zabbix-3.4.4.tar.gz
