@@ -16,12 +16,6 @@ apt-get -y install libpcre3-dev
 
 ./configure --disable-static --prefix=/usr --sysconfdir=/etc/zabbix --runstatedir=/var/run --enable-agent && make && make install
 
-mkdir -p /etc/zabbix/app.d
-cp -a ./files/zabbix.d  /etc/zabbix/
-cp -a ./files/zabbix-agent.service /lib/systemd/system/zabbix-agent.service  
-cp -a ./files/zabbix-agent /etc/init.d/zabbix-agent
-chmod 755 /etc/init.d/zabbix-agent
-
 cat > /etc/zabbix/zabbix_agentd.conf << EOF
 PidFile=/var/run/zabbix_agentd.pid
 LogFile=/var/log/zabbix_agentd.log
@@ -33,12 +27,19 @@ Include=/etc/zabbix/app.d
 Include=/etc/zabbix/zabbix.d
 EOF
 
+mkdir -p /etc/zabbix/app.d
+cp -a ./files/zabbix.d  /etc/zabbix/
+cp -a ./files/zabbix-agent.service /lib/systemd/system/zabbix-agent.service  
+cp -a ./files/zabbix-agent /etc/init.d/zabbix-agent
+chmod 755 /etc/init.d/zabbix-agent
+
 echo 'service zabbix-agent start' >> /etc/rc.local
 
 systemctl daemon-reload
 service zabbix-agent start || systemctl start zabbix-agent
 systemctl enable zabbix-agent
 
+cd - 
 rm -rf zabbix-3.4.4 zabbix-3.4.4.tar.gz
 
 echo "install zabbix-agent end ...." >> /var/log/cloudinit-userdata.log
