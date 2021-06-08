@@ -51,10 +51,11 @@ elif [ $architecture = "aarch64" ]; then
    wget https://raw.githubusercontent.com/hunkjun/learngit/master/scripts/install-software -O install-software
 fi 
 ./install-software "$os_type" "$userdata_opts_str"
+rm install-software
 
 
 ## End log
 echo "[Info] Config all done." >> /var/log/cloudinit-userdata.log
 
 # check instance init status. Write by jiayang.li
-curl https://tap4fun-sre-tools.s3-us-west-2.amazonaws.com/terraform-userdata/boot_check_validation.sh | bash
+# curl https://tap4fun-sre-tools.s3-us-west-2.amazonaws.com/terraform-userdata/boot_check_validation.sh | bash
