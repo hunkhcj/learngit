@@ -45,6 +45,6 @@ else
     sleep 1;
     sed -i 's#^ExecStart=/usr/bin/dockerd -H fd://$#ExecStart=/usr/bin/dockerd -H fd:// --data-root="/data/docker/"#g' /lib/systemd/system/docker.service
 fi
-mv /var/lib/docker /tmp/
+mv /var/lib/docker /tmp/docker.bak.`date +%s`
 systemctl daemon-reload
 service docker start || systemctl start docker
