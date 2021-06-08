@@ -93,7 +93,7 @@ custom_config:
   - zabbix
   - docker-compose
 
-
+# 软件依赖关系
 dependence_config:
   docker:
   - docker-compose
