@@ -88,5 +88,7 @@ Restart=always
 WantedBy=multi-user.target
 EOF
 
-systemctl start exporter_exporter
+systemctl daemon-reload
 systemctl enable exporter_exporter
+systemctl start exporter_exporter
+
