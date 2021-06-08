@@ -4,9 +4,9 @@ x86_64-18.04:
   tokens:
     zabbix:
     - version: v3.4.4
-      token: MjAyMS82LzgvemFiYml4LTMuNC40LnRhci5neiYmJiYxNjIzMTM0Mzc5MzQzMTM3
+      token: 2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNTA1NDE0OTU3Mg==
     - version: default
-      token: MjAyMS82LzgvemFiYml4LTMuNC40LnRhci5neiYmJiYxNjIzMTM0Mzc5MzQzMTM3
+      token: 2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNTA1NDE0OTU3Mg==
     node_exporter:
     - version: v0.18.1
       token: Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ==
@@ -42,9 +42,9 @@ x86_64-20.04:
   tokens:
     zabbix:
     - version: v3.4.4
-      token: MjAyMS82LzgvemFiYml4LTMuNC40LnRhci5neiYmJiYxNjIzMTM0Mzc5MzQzMTM3
+      token: 2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNTA1NDE0OTU3Mg==
     - version: default
-      token: MjAyMS82LzgvemFiYml4LTMuNC40LnRhci5neiYmJiYxNjIzMTM0Mzc5MzQzMTM3
+      token: 2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNTA1NDE0OTU3Mg==
     node_exporter:
     - version: v0.18.1
       token: Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ==
