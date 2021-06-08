@@ -10,6 +10,7 @@ fi
 # wget -P /tmp  https://github.com/QubitProducts/exporter_exporter/releases/download/v0.4.2/expexp_0.4.2-3_amd64.deb
 # dpkg -i /tmp/expexp_0.4.2-3_amd64.deb
 
+rm -rf ~/.file-ladder/download/${token} || echo "delete ~/.file-ladder/download/${token} failed"
 file-ladder down -y ${token} -C /usr/local/bin/
 
 config=/etc/exporter_exporter.yaml

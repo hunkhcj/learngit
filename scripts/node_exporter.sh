@@ -4,7 +4,8 @@
 # cp -a /tmp/node_exporter-0.18.1.linux-amd64/node_exporter /usr/local/bin/node_exporter
 
 token=$1;
-echo "Download.$token"
+
+rm -rf ~/.file-ladder/download/${token} || echo "delete ~/.file-ladder/download/${token} failed"
 file-ladder down -C /usr/local/bin/ $token -y;
 
 useradd -rs /bin/false node_exporter
