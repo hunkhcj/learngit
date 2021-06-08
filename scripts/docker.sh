@@ -17,7 +17,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -;
 apt-key fingerprint 0EBFCD88;
 apt-get update;
 apt-get install -y apt-transport-https ca-certificates curl software-properties-common; 
-if [ `lsb_release -a|grep Release|awk '{print $NF}'` == "20.04" ]; then
+if [ `lsb_release --release --short` == "20.04" ]; then
     apt-get install -y $dockerversion;
 else
     apt-get install -y $dockerversion;
