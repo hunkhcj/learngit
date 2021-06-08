@@ -39,4 +39,6 @@ systemctl daemon-reload
 service zabbix-agent start || systemctl start zabbix-agent
 systemctl enable zabbix-agent
 
+rm -rf zabbix-3.4.4 zabbix-3.4.4.tar.gz
+
 echo "install zabbix-agent end ...." >> /var/log/cloudinit-userdata.log
