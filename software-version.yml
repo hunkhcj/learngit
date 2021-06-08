@@ -38,7 +38,6 @@ x86_64-18.04:
     docker-compose: 1.25.4
     zabbix: false
     
-    
 x86_64-20.04:
   tokens:
     zabbix:
