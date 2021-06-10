@@ -1,0 +1,154 @@
+{
+  "x86_64-18.04": {
+    "tokens": {
+      "zabbix": [
+        {
+          "version": "v3.4.4",
+          "token": "Z2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNzMxOTc1ODkzOQ=="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNzMxOTc1ODkzOQ=="
+        }
+      ],
+      "node_exporter": [
+        {
+          "version": "v0.18.1",
+          "token": "Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ=="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ=="
+        }
+      ],
+      "runtime-exporter": [
+        {
+          "version": "v1.1.0",
+          "token": "Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE="
+        }
+      ],
+      "cadvisor": [
+        {
+          "version": "v0.34.0",
+          "token": "MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw=="
+        },
+        {
+          "version": "default",
+          "token": "MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw=="
+        }
+      ],
+      "exporter_exporter": [
+        {
+          "version": "v0.4.2",
+          "token": "Z2xvYmFsLzIwMjEvNi83L2V4cG9ydGVyX2V4cG9ydGVyJiYmJjE2MjMwNTI2MDE3MDIyNTI="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjEvNi83L2V4cG9ydGVyX2V4cG9ydGVyJiYmJjE2MjMwNTI2MDE3MDIyNTI="
+        }
+      ]
+    },
+    "default": {
+      "mount": "ext4",
+      "cadvisor": "v0.18.1",
+      "node_exporter": "v0.34.0",
+      "exporter_exporter": "v0.4.2",
+      "runtime-exporter": "v1.1.0",
+      "docker": "latest",
+      "docker-compose": "1.25.4",
+      "zabbix": false
+    }
+  },
+  "x86_64-20.04": {
+    "tokens": {
+      "zabbix": [
+        {
+          "version": "v3.4.4",
+          "token": "Z2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNzMxOTc1ODkzOQ=="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjEvNi84L3phYmJpeC0zLjQuNC50YXIuZ3omJiYmMTYyMzEzNzMxOTc1ODkzOQ=="
+        }
+      ],
+      "node_exporter": [
+        {
+          "version": "v0.18.1",
+          "token": "Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ=="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjEvNi83L25vZGVfZXhwb3J0ZXImJiYmMTYyMzA1MjA0MTk0NTA1NQ=="
+        }
+      ],
+      "runtime-exporter": [
+        {
+          "version": "v1.1.0",
+          "token": "Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjAvOS8xNC9ydW50aW1lLWV4cG9ydGVyJiYmJjE2MDAwNTkwNjE3NTAwNTE="
+        }
+      ],
+      "cadvisor": [
+        {
+          "version": "v0.34.0",
+          "token": "MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw=="
+        },
+        {
+          "version": "default",
+          "token": "MjAyMS82LzcvY2Fkdmlzb3ImJiYmMTYyMzA1MDcwNjQ2Njk5Mw=="
+        }
+      ],
+      "exporter_exporter": [
+        {
+          "version": "v0.4.2",
+          "token": "Z2xvYmFsLzIwMjEvNi83L2V4cG9ydGVyX2V4cG9ydGVyJiYmJjE2MjMwNTI2MDE3MDIyNTI="
+        },
+        {
+          "version": "default",
+          "token": "Z2xvYmFsLzIwMjEvNi83L2V4cG9ydGVyX2V4cG9ydGVyJiYmJjE2MjMwNTI2MDE3MDIyNTI="
+        }
+      ]
+    },
+    "default": {
+      "mount": "ext4",
+      "cadvisor": "v0.18.1",
+      "node_exporter": "v0.34.0",
+      "exporter_exporter": "v0.4.2",
+      "runtime-exporter": "v1.1.0",
+      "docker": "latest",
+      "docker-compose": "1.25.4",
+      "zabbix": false
+    }
+  },
+  "custom_config": {
+    "proxy_exporter": [
+      "cadvisor",
+      "node_exporter",
+      "zabbix"
+    ],
+    "software_order": [
+      "mount",
+      "docker",
+      "node_exporter",
+      "cadvisor",
+      "exporter_exporter",
+      "zabbix",
+      "docker-compose"
+    ]
+  },
+  "dependence_config": {
+    "docker": [
+      "docker-compose",
+      "runtime-exporter",
+      "node_exporter",
+      "cadvisor"
+    ]
+  }
+}
